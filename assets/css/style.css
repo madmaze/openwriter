@@ -1,85 +1,26 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Mono);
-@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:700,400italic,400);
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
+@import url(http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400);
+/*@font-face {
+    font-family: "casper-icons";
+    src:url("../fonts/casper-icons.eot?v=1");
+    src:url("../fonts/casper-icons.eot?v=1#iefix") format("embedded-opentype"),
+        url("../fonts/casper-icons.woff?v=1") format("woff"),
+        url("../fonts/casper-icons.ttf?v=1") format("truetype"),
+        url("../fonts/casper-icons.svg?v=1#icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, 
+footer, header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark, audio,
 video {
     margin: 0;
     padding: 0;
@@ -88,17 +29,9 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption,
+figure, footer, header, hgroup, 
+menu, nav, section {
     display: block;
 }
 body {
@@ -142,20 +75,24 @@ html {
 body,
 input,
 textarea {
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Merriweather", serif;
     font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 1.8;
     font-weight: 400;
     color: #505050;
 }
 h1 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 30px;
-    font-size: 3rem;
-    color: #fafafa;
+    height: 57px;
+    letter-spacing: -1px;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #ffffff;
 }
 h2 {
+    font-family: "casper-icons", "Open Sans", sans-serif;
     font-size: 22px;
     font-size: 2.2rem;
 }
@@ -163,9 +100,10 @@ h2 a {
     text-decoration: none;
 }
 h3 {
+    font-family: "casper-icons", "Open Sans", sans-serif;
     font-size: 14px;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 300;
     color: #c8c8c8;
 }
 label {
@@ -178,7 +116,7 @@ a {
     transition: color 0.6s;
 }
 a:hover {
-    color: #710109;
+    color: #505050;
 }
 nav a {
     text-decoration: none;
@@ -186,7 +124,7 @@ nav a {
 .btn,
 input[type="submit"],
 .homepage-links li a {
-    font-family: 'Libre Baskerville', serif;
+    font-family: "casper-icons", "Open Sans", sans-serif;
     font-size: 12px;
     font-size: 1.2rem;
 }
@@ -217,8 +155,8 @@ input[type="submit"],
     margin: 1rem 0;
     padding: 0.4rem;
     text-align: center;
-    border: 3px solid #710109;
-    border-radius: 20px;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
     display: inline-block;
     transition: background-color 0.6s, color 0.6s;
 }
@@ -228,8 +166,9 @@ input[type="submit"]:hover,
 .btn:focus,
 input[type="submit"]:focus,
 .homepage-links li a:focus {
-    background-color: #710109;
-    color: #fafafa;
+    background-color: #fafafa;
+    border: 1px solid #fafafa;
+    color: #505050;
 }
 .pagination {
     margin-top: 1rem;
@@ -502,6 +441,7 @@ footer {
     margin: 1rem;
 }
 .blog-description {
+    font-size: 20px;
     margin: 2rem auto;
 }
 .homepage-links li {
